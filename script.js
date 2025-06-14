@@ -6,13 +6,13 @@ form.addEventListener("submit", async (e) => {
   console.log("제출됨");
 
   const location = document.getElementById("location").value;
-  const startDate = document.getElementById("startDate").value;  // ← 수정됨
-  const endDate = document.getElementById("endDate").value;      // ← 수정됨
+  const startDate = document.getElementById("startDate").value;  
+  const endDate = document.getElementById("endDate").value;      
 
   resultDiv.textContent = "추천 정보를 불러오는 중입니다...";
 
   try {
-    const response = await fetch("https://assign2-68yb5gubl-yujins-projects-24ecc15d.vercel.app/api/duksungAI", {
+    const response = await fetch("https://assign2-856s43hmr-yujinshims-projects.vercel.app/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
