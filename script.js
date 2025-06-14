@@ -12,7 +12,8 @@ form.addEventListener("submit", async (e) => {
   resultDiv.textContent = "추천 정보를 불러오는 중입니다...";
 
   try {
-    const response = await fetch("https://assign2-856s43hmr-yujinshims-projects.vercel.app/", {
+    const response = await fetch("https://assign2-brown.vercel.app/api/duksungAI",
+    {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
