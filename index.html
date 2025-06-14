@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여행 옷 준비 도우미</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>여행 옷 준비 도우미</h1>
+
+      <form id="travel-form">
+        <label for="location">여행할 국가(도시)</label>
+        <input type="text" id="location" name="location" required />
+        <br />
+        <label for="startDate">출발일</label>
+        <input type="date" id="startDate" name="startDate" required />
+
+        <label for="endDate">도착일</label>
+        <input type="date" id="endDate" name="endDate" required />
+
+        <button type="submit">추천 옷차림 보기</button>
+      </form>
+
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
